@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:minHeight="?attr/actionBarSize"
+        app:titleTextColor="@android:color/white"></android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/courseImageView"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="4dp" />
+
+        <TextView
+            android:id="@+id/courseAddressTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/courseImageView" />
+
+        <TextView
+            android:id="@+id/coursePhoneTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/courseAddressTextView"
+            android:layout_toRightOf="@+id/courseImageView" />
+
+        <TextView
+            android:id="@+id/courseEmailTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/coursePhoneTextView"
+            android:layout_toRightOf="@+id/courseImageView"
+            android:paddingBottom="5dp"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/courseInfoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:paddingBottom="5dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <TextView
+            android:id="@+id/courseWebInfoTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:text="Katso kentät kotisivut:" />
+
+        <TextView
+            android:id="@+id/courseWebTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/courseWebInfoTextView"
+            android:layout_marginLeft="20dp"
+            android:autoLink="all" />
+
+        <TextView
+            android:id="@+id/courseMapInfoTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/courseWebTextView"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Katso kentän sijainti:" />
+
+        <TextView
+            android:id="@+id/courseMapTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/courseMapInfoTextView"
+            android:layout_marginLeft="20dp"
+            android:text="Näytä kartalla"
+            android:textColor="@color/colorAccent" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>
